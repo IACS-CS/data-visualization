@@ -49,21 +49,22 @@ const App = () => {
 
 
   return (
-    <main>
+    <main style={{maxWidth:800,margin:'auto'}}>
       <h1>Hello Data Visualization</h1>
       <p>Loaded {csvData.length} rows of CSV Data!</p>
-      <PieChart width={800} height={800}>
+      <h2>Favorite Colors:</h2>
+      <PieChart width={300} height={300}>
         <Pie data={pieData} dataKey="value" nameKey="name" label fill="yellow">
           <LabelList dataKey="name" position="middle"/>
           {
           pieData.map(
-            (entry)=>(<Cell fill={entry.name.toLowerCase()} />)
+            (entry)=>(<Cell key={entry.name} fill={entry.name.toLowerCase()} />)
           )}
         </Pie>
 
       </PieChart>
       {csvData.map(
-        (row)=><div>{row.Name} age {row.Age}'s favorite color is {row["Favorite Color"]} and they play {row["Favorite Sport"]}</div>
+        (row,idx)=><div key={idx}>{row.Name} age {row.Age}'s favorite color is {row["Favorite Color"]} and they play {row["Favorite Sport"]}</div>
       )}
     </main>
   );

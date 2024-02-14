@@ -2,13 +2,11 @@ Name,Age,Favorite Color,Favorite Sport
 Janet,36,Blue,Volleyball
 Carlos,29,Green,Soccer
 Aisha,42,Red,Basketball
-Yuto,34,Yellow,Baseball
+Yuto,34,Teal,Baseball
 Nia,27,Purple,Tennis
 Amir,31,Orange,Cricket
 Elena,39,Teal,Swimming
 Dinesh,45,Blue,Rugby
-Lei,28,Black,Table Tennis
-Fatima,33,White,Field Hockey
 Sofia,24,Blue,Soccer
 Liam,38,Red,Basketball
 Zara,26,Green,Tennis
@@ -17,17 +15,17 @@ Chen,35,Red,Soccer
 Ivan,30,Green,Basketball
 Jasmine,27,Blue,Tennis
 Mateo,32,Red,Baseball
-Olivia,29,Green,Soccer
+Olivia,29,Purple,Soccer
 Noah,37,Blue,Basketball
 Luna,40,Red,Tennis
 Kai,28,Green,Baseball
-Isabella,31,Blue,Soccer
+Isabella,31,Purple,Soccer
 Lucas,33,Red,Basketball
 Mia,25,Green,Tennis
 Ethan,39,Blue,Baseball
 Lara,22,Red,Soccer
 Aarav,36,Green,Basketball
-Emma,34,Blue,Tennis
+Emma,34,Purple,Tennis
 James,30,Red,Baseball
 Ava,23,Green,Soccer
 Muhammad,42,Blue,Basketball
@@ -67,5 +65,16 @@ Tom,31,Blue,Tennis
 Sara,34,Red,Baseball
 Max,36,Green,Soccer
 Anika,30,Blue,Basketball
-Theo,33,Red,Tennis
-Lina,26,Green,Baseball
+Theo,33,Purple,Tennis
+Lina,26,Purple,Baseball
+Amir,31,Orange,Cricket
+Joe,31,Orange,Cricket
+Joanne,31,Orange,Cricket
+Laura,31,Orange,Cricket
+Kai,31,Orange,Cricket
+Abdul,31,Orange,Cricket
+Elena,39,Teal,Swimming
+Helena,39,Teal,Swimming
+Maureen,39,Teal,Swimming
+Sara,39,Teal,Swimming
+Teegan,39,Teal,Swimming

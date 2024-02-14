@@ -4,10 +4,13 @@ For this project, we will be learning about how to use computers to help underst
 
 In this project, we will be using our programming skills to help explore data sets.
 
+[Model project source code here](https://github.com/thinkle-iacs/data-visualization/)
+
 ## Libraries used in this project
 
 ### Mapping Data
-To map data we will be using open layers library through the [rlayers](https://mmomtchev.github.io/rlayers/) react package.
+To map data we will be using open layers library through the [rlayers](https://mmomtchev.github.io/rlayers/) react package. Here is some example map code at 
+work: [Model Map Component](https://github.com/thinkle-iacs/data-visualization/blob/main/src/components/Map.tsx)
 
 ### Charting Data
 To chart data, we will be using the [recharts library](https://recharts.org/). Click on "API" for a guide to the different chart types.
