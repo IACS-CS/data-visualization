@@ -35,10 +35,33 @@ const App = () => {
           );
         }
       }
-      return visualizations;
+      let heading = <h2>{dataSets[key].name}</h2>;
+      return [heading, ...visualizations];
     } else {
-      return <p>No data yet</p>;
+      return null;
     }
+  };
+
+  const renderCrossDataSetVisualizations = () => {
+    let data = {};
+    Object.entries(dataSets).forEach(([key, source]) => {
+      data[key] = source.data;
+    });
+    let visualizations = [];
+    for (let render of dataVisualizations.all) {
+      try {
+        visualizations.push(render(data));
+      } catch (err) {
+        console.error("Error rendering visualization:", err);
+        visualizations.push(
+          <p style={{ color: "red" }}>
+            Error rendering visualization: {err.message}
+          </p>
+        );
+      }
+    }
+    let heading = <h2>All Data</h2>;
+    return [heading, ...visualizations];
   };
 
   return (
@@ -46,13 +69,13 @@ const App = () => {
       <h1>Data Visualization</h1>
       {Object.entries(dataSets).map(([key, source]) => (
         <section key={key}>
-          <h2>{source.name}</h2>
           {!source.data && (
-            <button onClick={() => getData(key)}>Load Data</button>
+            <button onClick={() => getData(key)}>Load {source.name}</button>
           )}
           {renderVisualizations(key)}
         </section>
       ))}
+      {renderCrossDataSetVisualizations()}
     </main>
   );
 };

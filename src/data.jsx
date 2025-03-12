@@ -73,4 +73,5 @@ export const dataVisualizations = {
     (data) =>
       renderDataTable(data, ["Name", "100 Yard Dash Time", "APCSP Score"]),
   ],
+  all: [({ scatterDemo, colorDemo }) => <p>Fix me</p>],
 };
